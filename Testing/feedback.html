@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="feedback.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.0.0-beta3-web/css/all.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="containera">
+            <div class="navbar">
+                <a href="" class="">
+                    <img class="" src="/Testing/Images/LOGO.png" alt=""
+                        width="150px" />
+
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about_us.html">About us</a></li>
+                        <li><a href="contact_us.html">Contact us</a></li>
+                        <li><a href="products.html">Products</a>
+                            <li><a href="feedback.html">Feedback</a></li>   
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="post">
+            <div class="text">Thank you for rating us!</div>
+            <div class="edit">EDIT</div>
+        </div>
+        <div class="star-widget">
+            <input type="radio" name="rate" id="rate-5">
+            <label for="rate-5" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-4">
+            <label for="rate-4" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-3">
+            <label for="rate-3" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-2">
+            <label for="rate-2" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-1">
+            <label for="rate-1" class="fas fa-star"></label>
+
+
+            <form action="#">
+                <header></header>
+                <div class="textarea">
+                    <textarea cols="30" placeholder="Describe your experience"></textarea>
+                </div>
+                <div class="btn">
+                    <button type="button">Post</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <script>
+        const btn = document.querySelector("button");
+        const post = document.querySelector(".post");
+        const widget = document.querySelector(".star-widget");
+        const editBtn = document.querySelector(".edit");
+        btn.onclick = () => {
+            
+            console.log(widget)
+            widget.style.display = "none"
+            post.style.display = "block"
+            editBtn.onclick = () => {
+                widget.style.display = "block"
+                post.style.display = "none"
+                
+                // return false;
+            }
+        }
+    </script>
+
+</body>
+
+</html>
