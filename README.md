@@ -22,7 +22,7 @@ Project title: Uniform
            
 ============================
 
-eProject documentation at https://github.com/nguyenxuanthanh0807/group3/tree/master/document
+eProject documentation at https://github.com/nguyenxuanthanh0807/Projectgroup3/tree/master/document
 
 ============================
 
